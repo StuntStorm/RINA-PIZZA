@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="17dp"
+        app:srcCompat="@drawable/rina" />
+
+    <TextView
+        android:id="@+id/asc"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvOrderSummary"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="67dp"
+        android:text="Order Details"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        tools:text="Order Summary" />
+
+    <TextView
+        android:id="@+id/tvSelectedToppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOrderSummary"
+        android:layout_marginTop="16dp"
+        android:text="Selected Toppings:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvToppingsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSelectedToppings"
+        android:layout_marginTop="8dp"
+        android:paddingStart="16dp"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvToppingsList"
+        android:layout_marginTop="16dp"
+        android:text="Quantity:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvQuantityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuantity"
+        android:paddingStart="16dp"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuantityValue"
+        android:layout_marginTop="16dp"
+        android:text="Total Price:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotalPriceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotalPrice"
+        android:paddingStart="16dp"
+        android:text=""
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnProceedToPayment"
+        android:layout_width="314dp"
+        android:layout_height="89dp"
+        android:layout_above="@+id/asc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="proceedToPayment"
+        android:text="Proceed to Payment"
+        android:textAlignment="center" />
+
+</RelativeLayout>
